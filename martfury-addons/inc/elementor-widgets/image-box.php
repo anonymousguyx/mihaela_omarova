@@ -735,11 +735,11 @@ class Image_Box extends Widget_Base {
 			echo $this->get_link_control( 'link', $settings['link'], $image, 'thumbnail' );
 			?>
             <div class="image-content">
-                <h3 class="box-title">
+                <p class="box-title">
 					<?php
 					echo $this->get_link_control( 'link_title', $settings['link'], $settings['title'], '' );
 					?>
-                </h3>
+                </p>
                 <ul class="extra-links">
 
 					<?php
