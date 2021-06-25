@@ -675,7 +675,9 @@ class Banner_Medium extends Widget_Base {
                 <a class="link" <?php echo $this->get_render_attribute_string( 'link' ); ?>></a>
 			<?php endif; ?>
             <div class="banner-content">
-                <h2 class="banner-title"><?php echo $title; ?></h2>
+				<?php if($title): ?>
+                	<p class="banner-title"><?php echo $title; ?></p>
+				<?php endif; ?>
                 <div class="banner-desc"><?php echo $settings['desc']; ?></div>
 				<?php if ( ! empty( $settings['button_text'] ) ) : ?>
                     <div class="banner-button">

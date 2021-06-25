@@ -532,7 +532,7 @@ class Martfury_WooCommerce {
 	 * @return array
 	 */
 	function products_title() {
-		printf( '<h2><a href="%s">%s</a></h2>', esc_url( get_the_permalink() ), get_the_title() );
+		printf( '<p><a href="%s">%s</a></p>', esc_url( get_the_permalink() ), get_the_title() );
 	}
 
 	/**
@@ -2616,7 +2616,7 @@ class Martfury_WooCommerce {
 
 		?>
         <div class="mf-product-fbt" id="mf-product-fbt">
-            <h3 class="fbt-title"><?php echo esc_html( $title ); ?></h3>
+            <p class="fbt-title"><?php echo esc_html( $title ); ?></p>
             <ul class="products">
 				<?php
 				$dupplicate_id = 0;
@@ -2675,11 +2675,11 @@ class Martfury_WooCommerce {
 								<?php echo martfury_get_image_html( $item->get_image_id(), 'shop_catalog' ); ?>
                             </a>
 
-                            <h2>
+                            <p>
                                 <a href="<?php echo esc_url( $item->get_permalink() ) ?>">
 									<?php echo esc_html( $product_name ); ?>
                                 </a>
-                            </h2>
+                            </p>
 
                             <div class="price">
 								<?php echo wp_kses_post( $item->get_price_html() ); ?>

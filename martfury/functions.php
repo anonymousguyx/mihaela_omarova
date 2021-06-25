@@ -136,8 +136,8 @@ function martfury_register_sidebar() {
 				'id'            => $id,
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</div>',
-				'before_title'  => '<h4 class="widget-title">',
-				'after_title'   => '</h4>',
+				'before_title'  => '<p class="widget-title">',
+				'after_title'   => '</p>',
 			)
 		);
 	}

@@ -28,7 +28,7 @@ if ( $related_products ) : ?>
 	<section class="related products" data-columns="<?php echo esc_attr( $columns ); ?>">
 		<div class="<?php echo esc_attr($container_class); ?>">
 			<div class="related-content">
-				<h2 class="related-title"><?php echo esc_html( $related_title ); ?></h2>
+				<p class="related-title"><?php echo esc_html( $related_title ); ?></p>
 
 				<?php woocommerce_product_loop_start(); ?>
 

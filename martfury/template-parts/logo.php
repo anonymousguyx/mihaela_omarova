@@ -43,17 +43,17 @@ if ( intval( martfury_get_option( 'sticky_header' ) ) && intval( martfury_get_op
     </div>
 <?php
 $custom_title_tag = get_post_meta( get_the_ID(), 'site_title_tag_homepage', true );
-$custom_title_tag = empty( $custom_title_tag ) ? 'h1' : $custom_title_tag;
+$custom_title_tag = empty( $custom_title_tag ) ? 'p' : $custom_title_tag;
 $title_tag        = martfury_is_homepage() ? $custom_title_tag : 'p';
 
 printf(
-	'<%1$s class="site-title"><a href="%2$s" rel="home">%3$s</a></%1$s>',
+	'<p class="site-title"><a href="%2$s" rel="home">%3$s</a></p>',
 	$title_tag,
 	esc_url( home_url( '/' ) ),
 	get_bloginfo( 'name' )
 );
 ?>
-    <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+    <p class="site-description"><?php bloginfo( 'description' ); ?></p>
 
 <?php
 

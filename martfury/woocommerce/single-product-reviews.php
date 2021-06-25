@@ -171,14 +171,14 @@ if ( get_option( 'woocommerce_enable_review_rating' ) === 'no' || $average_ratin
 		</div>
 	</div>
 	<div id="comments">
-		<h2 class="woocommerce-Reviews-title"><?php
+		<p class="woocommerce-Reviews-title"><?php
 			if ( get_option( 'woocommerce_enable_review_rating' ) === 'yes' && ( $count = $product->get_review_count() ) ) {
 				/* translators: 1: reviews count 2: product name */
 				printf( esc_html( _n( '%1$s Review For This Product', '%1$s Reviews For This Product', $count, 'martfury' ) ), esc_html( $count ) );
 			} else {
 				esc_html_e( 'Reviews', 'martfury' );
 			}
-			?></h2>
+			?></p>
 
 		<?php if ( have_comments() ) : ?>
 

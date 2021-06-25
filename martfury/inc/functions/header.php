@@ -750,7 +750,7 @@ if ( ! function_exists( 'martfury_extra_department' ) ) :
 
 		?>
         <div class="products-cats-menu <?php echo esc_attr( $dep_open ); ?>">
-            <h2 class="cats-menu-title"><?php echo wp_kses( $dep_text, wp_kses_allowed_html( 'post' ) ); ?></h2>
+            <p class="cats-menu-title"><?php echo wp_kses( $dep_text, wp_kses_allowed_html( 'post' ) ); ?></p>
 
             <div class="toggle-product-cats nav" <?php echo esc_attr( $cat_style ); ?>>
 				<?php

@@ -20,7 +20,7 @@ if ( function_exists( 'wc_get_image_size' ) ) {
 					<?php echo wp_kses_post( $product->get_image( $thumbnail_size ) ); ?>
                 </div>
                 <div class="product-name">
-                    <h2><?php echo wp_kses_post( $product->get_title() ); ?></h2>
+                    <p><?php echo wp_kses_post( $product->get_title() ); ?></p>
                     <ul class="sc-tabs">
 						<?php foreach ( $tabs as $key => $tab ) :
 							$css_class = 'tab-' . $key;

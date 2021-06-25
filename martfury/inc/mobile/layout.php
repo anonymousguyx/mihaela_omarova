@@ -579,7 +579,7 @@ class Martfury_Mobile {
 						$depart_menu = '<a href="' . esc_url( $c_link ) . '" class="text">' . $depart_menu . '</a>';
 					}
 					?>
-                    <h2><?php echo wp_kses_post( $depart_menu ); ?></h2>
+                    <p><?php echo wp_kses_post( $depart_menu ); ?></p>
                     <a class="close-mobile-nav"><i class="icon-cross"></i></a>
                 </div>
 

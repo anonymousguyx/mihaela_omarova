@@ -422,7 +422,7 @@ if ( ! function_exists( 'martfury_off_canvas_mobile_menu' ) ) :
 					$depart_menu = martfury_get_option( 'header_menu_panel_mobile_title' );
 					$depart_menu = empty( $depart_menu ) ? esc_html__( 'Main Menu', 'martfury' ) : $depart_menu;
 					?>
-                    <h2><?php echo wp_kses_post( $depart_menu ); ?></h2>
+                    <p><?php echo wp_kses_post( $depart_menu ); ?></p>
                     <a class="close-mobile-nav"><i class="icon-cross"></i></a>
                 </div>
 

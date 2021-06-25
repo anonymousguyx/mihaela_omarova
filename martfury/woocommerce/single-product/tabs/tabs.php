@@ -68,7 +68,7 @@ if ( ! empty( $tabs ) ) :
                 <div class="mf-Tabs-panel mf-Tabs-panel--<?php echo esc_attr( $key ); ?> panel entry-content"
                      id="tab-<?php echo esc_attr( $key ); ?>" role="tabpanel"
                      aria-labelledby="tab-title-<?php echo esc_attr( $key ); ?>">
-                    <h3 class="tab-title"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?><?php echo '' . $ch_down ?></h3>
+                    <p class="tab-title"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?><?php echo '' . $ch_down ?></p>
 					<?php if ( isset( $tab['callback'] ) ) {
 						echo '<div class="tab-content-wrapper">';
 						call_user_func( $tab['callback'], $key, $tab );
